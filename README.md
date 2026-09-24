@@ -1,2 +1,14 @@
-# Quiz-Management-System
-Quizzy is a quiz management system built with React for the frontend and Node.js with Express for the backend. It allows users to register, log in, create quizzes, and check their scores.
+
+Request body: { topic, name, email, dept, score, answers }
+POST /check-quiz-attempt
+
+Check if a user has attempted a specific quiz.
+Request body: { email, topic }
+POST /check-teacher-marks
+
+Get marks for a specific quiz topic.
+Request body: { quizTopic }
+POST /check-student-marks
+
+Get marks for a specific student.
+Request body: { email }
